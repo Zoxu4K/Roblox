@@ -50,7 +50,7 @@ local kataSet    = {}
 local function downloadWordlist()
     debugPrint("Downloading wordlist...")
     local ok, response = pcall(function()
-        return game:HttpGet("https://raw.githubusercontent.com/danzzy1we/roblox-script-dump/refs/heads/main/WordListDump/withallcombination2.lua")
+        return game:HttpGet("https://raw.githubusercontent.com/Zoxu4K/Roblox/refs/heads/main/SambungKata/Kbbi_word.lua")
     end)
     if not ok or not response then debugPrint("GAGAL: Download failed") return false end
     local content = string.match(response, "return%s*(.+)")
